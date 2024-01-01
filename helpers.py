@@ -53,7 +53,7 @@ def generate_frame_tf(stonk_tensor):
 
 """### Defining tf functions to generate image of previous 3 min data"""
 @tf.function
-def generate_image_tf(i,stonk_tensor = df_stonk_tensor):
+def generate_image_tf(i):
   image = tf.stack([generate_frame_tf(stonk_tensor[i-1]),generate_frame_tf(stonk_tensor[i-2]),generate_frame_tf(stonk_tensor[i-3])],axis = -1)
 
   ##Normalizing the image
