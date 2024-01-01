@@ -65,7 +65,7 @@ def generate_image_tf(i):
 
 
 
-def G2_classifier(image_shape=IMG_SIZE):
+def G2_classifier(image_shape):
     ''' Define a tf.keras model for binary classification out of the MobileNetV2 model
     Arguments:
         image_shape -- Image width and height
